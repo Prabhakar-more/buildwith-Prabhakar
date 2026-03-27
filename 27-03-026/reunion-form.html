@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Reunion Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        .pacifico-regular {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            background-color: red;
+            text-align: center;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;         
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container{
+            padding: 25px;
+            border-radius: 25px;
+            width: 400px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        #venue{
+            color: orange;
+            text-align: center;
+        }
+
+        body{
+            align-items: center;
+            background-color:white;
+        }
+
+        .main-2{
+            text-align: center;
+        }
+
+        input{
+            box-sizing: 20px;
+            
+        }
+
+        #name{
+            color: rgb(167, 165, 165);
+        }
+
+        #red{
+            color: red;
+        }
+
+        #red2{
+            accent-color: red;
+        }
+
+        button{
+            background-color: red;
+            color: white;
+            border: none;
+            width: 400px;
+            border-radius: 20px;
+            padding: 10px;
+            outline: none;  
+            font-size: large;    
+        }
+
+        input {
+            border: none;
+            background-color: #f7c4c4;
+            border-radius: 12px;
+            padding: 10px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            box-shadow: 0 0 5px #08df68;
+        }
+
+        select{
+             border: none;
+            background-color: #fcb7b7;
+            border-radius: 12px;
+            padding: 10px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .required{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="pacifico-regular">
+   <h2>Reunion Form</h2> 
+   </div>
+   <div id="venue">
+    <p>Date:<b> 01-04-2026</b></p>
+    <p>Time: <b>6pm onwards</b></p>
+    <p>Place: <b>ABC Park, Baner, Pune</b></p>
+   </div>
+
+   <div class="main-2">
+   <h4>Name <span class="required">*</span></h4>
+   <label for="first-name" id="name">First</label><br>
+   <input type="text" required><br><br>
+
+   <label for="last-name" id="name">Last</label><br>
+   <input type="text" required><br><br>
+
+   <label for="year">Year of passing<span class="required">*</span></label><br>
+   <select name="year" id="year" required>
+    <option value="">Select Option</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+   </select><br><br>
+
+   <label for="text">Guest name</label><br>
+   <input type="text" id="text"><br><br>
+
+   <label for="email">Email<span class="required">*</span></label><br>
+   <input type="email" id="email" required><br><br>
+
+   <p>Would you like a souvenir?<span class="required">*</span></p>
+   <label id="red">
+    <input id="red2" type="radio" name="option" value="yes">Yes
+   </label><br>
+   <label id="red">
+    <input id="red2" type="radio" name="option" value="no">No
+   </label>
+
+   <p>What would you like?</p>
+   <label id="red">
+    <input id="red2" type="radio" name="option" value="photos">Photos
+   </label>
+   
+   <br>
+
+   <label id="red">
+    <input id="red2" type="radio" name="option" value="a dvd video">A DVD Video
+   </label>
+
+   <br><br>
+   <button value="submit">Submit</button>
+   </div>
+   </div>
+
+</body>
+</html>
