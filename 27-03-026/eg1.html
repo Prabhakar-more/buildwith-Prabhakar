@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML input type demonstration</title>
+</head>
+<body>
+    <form>
+        <h2>HTML input type demonstration</h2>
+        <!--Connection rule:  for="name" (label)  |  id="name" (input)    
+            They must match like a lock and key-->
+
+        <label for="fname">text input:</label>
+        <input type="text" id="fname" name="fname" placeholder="enter text"><br><br>
+
+        <!--Alternate way-->
+        <label>Name:
+            <input type="text" placeholder="Enter your name">
+        </label><!--no for or id needed here--> <br><br>
+
+
+
+        <label for="password">password input:</label>
+        <input type="password" id="password" name="password" placeholder="enter password"><br><br>
+        
+        <lable for="email">Email Input:</lable>
+        <input type="email" id="email" name="email" placeholder="enter email"><br><br>
+        
+        <lable for="number">Number Input:</lable>
+        <input type="number" id="number" name="number" placeholder="Enter number"><br><br>
+        
+        <lable for="date">date input:</lable>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <lable for="time">time Input:</lable>
+        <input type="time" id="time" name="time"><br><br>
+        
+        <lable for="color">color Input:</lable>
+        <input type="color" id="color" name="color"><br><br>
+        
+        <lable for="range">range Input:</lable>
+        <input type="range" id="range" name="range"><br><br>
+        
+        <lable for="search">search Input:</lable>
+        <input type="search" id="search" name="search" placeholder="search"><br><br>
+        
+        <lable for="telephone">telephone Input:</lable>
+        <input type="tel" id="telephone" name="telephone" placeholder="123-456-7890"><br><br>
+        
+        <lable for="URL">link:</lable>
+        <input type="url" id="url" name="url" placeholder="https://example.com"><br><br>
+        
+        <lable for="file">file upload:</lable>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <lable for="select">checkbox input:</lable>
+        <input type="checkbox" id="checkbox" name="checkbox" >
+        
+        <label for="checkbox"> I agree</label><br><br>
+        
+        <lable for="select">radio input:</lable>
+        <input type="radio" id="radio" name="radio"  >
+        <label for="checkbox"> option 1</label>
+        <label for="select"></label>
+
+        <input type="radio" id="radio-1" name="radio"  ><!--id should not be same... it must be unique-->
+        <label for="checkbox"> option 2</label>
+
+        <input type="radio" id="radio-2" name="radio"  >
+        <label for="checkbox"> option 3</label><br><br>
+
+        <input type="submit" value="submit">
+      </form>
+     
+    
+</body>
+</html>
+
+
+<!--
+======= Types of <input>  ========
+
+-- text	         normal text box
+-- password	     hidden text 
+-- email	     email validator 
+-- number	     number input 
+-- date	         calendar 
+-- time	         time picker 
+-- color     	 color selector 
+-- range	     slider 
+-- checkbox	     multiple choice 
+-- radio	     single choice 
+-- file	         upload 
+-- submit	     submit button 
+
+
+
+ ************ Important <input> Attributes *************
+-- type => what kind of input
+-- name => sent to server
+-- id => used for label linking
+
+
+-->
