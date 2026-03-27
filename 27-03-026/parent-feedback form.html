@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            background-color: #f0e961;
+            margin: 0;
+        }
+
+        .container{
+            background-color: white;
+            padding: 25px;
+            border-radius: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            
+        }
+
+        .heading{
+            text-align: center;
+        }
+
+        .main{
+            text-align: center;
+            
+        }
+
+        h1{
+            color: rgb(7, 106, 199);            
+        }
+
+        #blur{
+            color: rgb(164, 162, 162);
+        }
+
+        #inputtt{
+            border: none;
+            background-color: whitesmoke;
+            border-radius: 12px;
+            padding: 10px;
+            outline: none;
+        }
+
+        #inputtt:focus{
+            box-shadow: 0 0 5px #3cf1e2;
+        }
+
+        table{
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+        textarea{
+            padding: 30px;
+            outline: none;
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 12px;
+
+        }
+
+        th{
+            background-color: #dbfcfa;
+        }
+
+        .para{
+            background-color: #dbfcfa;
+        }
+
+        textarea:focus{
+            box-shadow: 0 0 5px #08df68;
+        }
+
+        button{
+            color: white;
+            background-color: rgb(31, 128, 224);
+            border: none;
+            width: 400px;
+            border-radius: 20px;
+            padding: 10px;
+            outline: none;  
+            font-size: large;
+        }
+
+        a{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="/27-03-026/flower.png"></a>
+    <div class="container">
+        <div class="heading">
+        <h1>Parent Feedback</h1>
+        <p><b>Share your experience with the school, and rate your satisfaction with the child's development <br>to help your child do better.</b></p>
+        </div>
+
+        <div class="main">
+        <p >Parent/Guardian Name</p>
+        <i class="fa fa-user"></i><br>
+        <input type="text" id="inputtt"><br>
+        <label for="text" id="blur">First Name</label><br><br>
+
+        <input type="text" id="inputtt"><br>
+        <label for="text" id="blur">Last Name</label><br><br>
+
+        <i class="fa fa-phone"></i>
+        <label for="tel">Phone</label><br>
+        <input type="tel" id="inputtt"><br><br>
+
+        <i class="fa fa-envelope"></i>
+        <label for="email">Email</label><br>
+        <input type="email" id="inputtt" ><br><br>
+
+        <p>Student Name</p>
+        <i class="fa fa-user"></i><br>
+        <input type="text" id="inputtt"><br>
+        <label for="text" id="blur">First Name</label><br><br>
+
+        <input type="text" id="inputtt"><br>
+        <label for="text" id="blur">Last Name</label><br><br>
+
+        <p>How satisfied are you with your child's progress?</p>
+        <table border="1" cellspacing="0" >
+            <tbody>
+            <tr>
+                <th></th>
+                <th>Very Unsatisfied</th>
+                <th>Unsatisfied</th>
+                <th>Neutral</th>
+                <th>Satisfied</th>
+                <th>Very Satisfied</th>
+            </tr>
+
+            <tr>
+                <td class="para">Has your child done better in this quarter?</td>
+                <td><input type="radio" name="option-1" value="1"></td>
+                <td><input type="radio" name="option-1" value="2"></td>
+                <td><input type="radio" name="option-1" value="3"></td>
+                <td><input type="radio" name="option-1" value="4"></td>
+                <td><input type="radio" name="option-1" value="5"></td>
+            </tr>
+
+            <tr>
+                <td class="para">Are you satisfied with the teachers and their teaching methodologies?</td>
+                <td><input type="radio" name="option-2" value="1"></td>
+                <td><input type="radio" name="option-2" value="2"></td>
+                <td><input type="radio" name="option-2" value="3"></td>
+                <td><input type="radio" name="option-2" value="4"></td>
+                <td><input type="radio" name="option-2" value="5"></td>
+            </tr>
+            <tr>
+                <td class="para">Do you think the school helps your children be the best they can be?</td>
+                <td><input type="radio" name="option-3" value="1"></td>
+                <td><input type="radio" name="option-3" value="2"></td>
+                <td><input type="radio" name="option-3" value="3"></td>
+                <td><input type="radio" name="option-3" value="4"></td>
+                <td><input type="radio" name="option-3" value="5"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p>Any concerns that you wish to address?</p><br>
+        <textarea></textarea><br><br>
+
+        <p>Share any suggestions that you have</p><br>
+        <textarea name="" id=""></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </div>
+    </div>
+    
+</body>
+</html>
