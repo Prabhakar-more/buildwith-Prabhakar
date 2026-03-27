@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reunion Form</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            background-color: white;
+            margin: 0;
+        }
+
+        .container{
+            text-align: center;
+            background-color: rgb(199, 230, 248);
+            color: rgb(15, 138, 226);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);;
+        }
+        
+        input[type="checkbox"], input[type="radio"]{
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            vertical-align: middle;
+            accent-color: rgb(6, 79, 181);
+        }
+
+
+        #required{
+            color: red;
+        }
+
+        .radiobtn{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+        }
+
+        .inputfields{
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            outline: none;
+            background-color:  rgb(194, 221, 248);
+        }
+
+        .inputfields:focus{
+            box-shadow: 0 0 5px rgb(51, 156, 247);
+        }
+
+        button{
+            padding: 15px;
+            width: 200px;
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <!--<img src="/27-03-026/flower.png" alt="">-->
+    <div class="container">
+        <h1>Reunion Form</h1>
+        <p>Time to rekindle some good ol' memories! <br>See you soon!</p>
+        <hr width="400px">
+        <p>Date:<b> 27-03-2026 </b>| Time: <b>6pm onwards </b>| <br>Address: <b>Our garage</b></p><br><br><br>
+
+        <div class="radiobtn">
+        <p for="radio">Would you <br>like to join <br>us?<span id="required">*</span></p>
+        <label><input type="radio" name="q1" value="1">Yes</label>
+        <label><input type="radio" name="q1" value="2">No</label>
+        </div>
+
+        <p>Name <span id="required">*</span></p>
+        <input type="text" class="inputfields"><br>
+        <label for="text">First</label><br><br>
+
+        <input type="text" class="inputfields"><br>
+        <label for="text">Last</label><br><br>
+
+        <p>Phone <span id="required">*</span></p>
+        <input type="tel" class="inputfields"><br><br>
+
+        <div class="radiobtn">
+        <p>your Meal <br>Preference <span id="required">*</span></p>
+        <label>Vegetarian<input type="radio" name="q2" id="1"></label>
+        <label>Non-Vegetarian<input type="radio" name="q2" id="2"></label>
+        </div>
+        
+
+        <div class="radiobtn">
+            <p>What kind of <br>games are <br>you <br>interested <br>in?</p>
+            <label for=""><input type="checkbox">Indoor</label>
+            <label for=""><input type="checkbox">Board</label>
+            <label for=""><input type="checkbox">Ball games</label>
+            <label for=""><input type="checkbox">Outdoor</label>
+        </div>
+
+        <div class="radiobtn">
+        <p>Do you have any <br>question?</p>
+        <input type="text" class="inputfields"></div><br><br>
+
+        <button value="submit">Submit</button>
+
+
+    </div>
+    
+    
+</body>
+</html>
